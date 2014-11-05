@@ -27,6 +27,33 @@ syntax on
 
 
 "==================================================
+" Keymaps
+
+
+" let mapleader = "\<Space>"
+
+" Copy & paste to system clipboard with <Leader>p and <Leader>y:
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
+" Automatically jump to end of text you pasted
+vnoremap <silent> y y`]
+vnoremap <silent> p p`]
+nnoremap <silent> p p`]
+
+" Hit Enter to go to end of file
+nnoremap <CR> G
+
+" Hit Backspace to go to beginning of file
+nnoremap <BS> gg
+
+" Quickly select text you just pasted
+noremap gV `[v`]
+"==================================================
 " Display options
 
 " colorscheme
@@ -155,7 +182,7 @@ set nofoldenable
 set backspace=indent,eol,start
 
 " toggle paste mode on \p
-set pastetoggle=<leader>p
+" set pastetoggle=<leader>p
 
 " Add '-' as recognized word symbol. e.g dw delete all 'foo-bar' instead just 'foo'
 set iskeyword+=-
@@ -229,11 +256,13 @@ endif
 
 nnoremap <leader>r :!%:p
 
-"==================================================
-" Google Go syntax
-
-filetype off
-filetype plugin indent off
-set runtimepath+=/usr/local/go/misc/vim
-filetype plugin indent on
-syntax on
+" vp doesn't replace paste buffer
+function! RestoreRegister()
+  let @" = s:restore_reg
+  return ''
+endfunction
+function! s:Repl()
+  let s:restore_reg = @"
+  return "p@=RestoreRegister()\<cr>"
+endfunction
+vmap <silent> <expr> p <sid>Repl()
