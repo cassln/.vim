@@ -19,6 +19,7 @@ source $HOME/.vim/vimrc.syntastic
 source $HOME/.vim/vimrc.airline
 
 source $HOME/.vim/vimrc.common
+source $HOME/.vim/vimrc.gui
 
 "-------------------------
 " vim-jade

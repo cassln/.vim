@@ -57,7 +57,7 @@ noremap gV `[v`]
 " Display options
 
 " colorscheme
-colo jellybeans
+colo candy
 
 " Hide showmode
 " Showmode is useless with airline

@@ -100,12 +100,16 @@ Bundle 'terryma/vim-multiple-cursors'
 " Unite and create user interfaces
 " http://www.vim.org/scripts/script.php?script_id=3396
 Bundle 'Shougo/unite.vim'
+Bundle 'ujihisa/unite-colorscheme'
 
 Bundle 'Shougo/neocomplcache.vim'
 let g:neocomplcache_enable_at_startup = 1
 
 " Bundle 'ervandew/supertab'
 Bundle 'mattn/emmet-vim'
+
+Bundle 'godlygeek/csapprox'
+Bundle 'thinca/vim-guicolorscheme'
 
 " Installing bundles for the first time
 if iCanHazVundle == 0
