@@ -29,7 +29,6 @@ syntax on
 "==================================================
 " Keymaps
 
-
 " let mapleader = "\<Space>"
 
 " Copy & paste to system clipboard with <Leader>p and <Leader>y:
@@ -53,6 +52,10 @@ nnoremap <BS> gg
 
 " Quickly select text you just pasted
 noremap gV `[v`]
+
+vmap < <gv
+vmap > >gv
+
 "==================================================
 " Display options
 
@@ -71,6 +74,7 @@ set list
 
 " Setting up how to display whitespace characters
 set listchars=tab:\ \ ,trail:·,extends:⋯,precedes:⋯,nbsp:~
+highlight SpecialKey cterm=NONE
 
 " Numbers of rows to keep to the left and to the right off the screen
 set scrolloff=10

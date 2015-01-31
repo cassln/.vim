@@ -1,6 +1,3 @@
-"==================================================
-" Bundles
-
 " Turn off filetype plugins before bundles init
 filetype off
 
@@ -59,14 +56,6 @@ Bundle 'tpope/vim-surround'
 " Vim motions on speed!
 Bundle 'Lokaltog/vim-easymotion'
 
-" Add snippets functionality for vim
-Bundle 'garbas/vim-snipmate'
-" Dependency for snipmate
-Bundle 'MarcWeber/vim-addon-mw-utils'
-
-" Default snippets. for snipmate
-Bundle 'honza/vim-snippets'
-
 " Add smart commands for comments like:
 " gcc - Toggle comment for the current line
 " gc  - Toggle comments for selected region or number of strings
@@ -98,18 +87,26 @@ Bundle 'lukaszb/vim-web-indent'
 Bundle 'terryma/vim-multiple-cursors'
 
 " Unite and create user interfaces
-" http://www.vim.org/scripts/script.php?script_id=3396
 Bundle 'Shougo/unite.vim'
 Bundle 'ujihisa/unite-colorscheme'
 
+" Completion
 Bundle 'Shougo/neocomplcache.vim'
-let g:neocomplcache_enable_at_startup = 1
+
+" Snippets
+Bundle 'Shougo/neosnippet'
+Bundle 'Shougo/neosnippet-snippets'
+Bundle 'honza/vim-snippets'
 
 " Bundle 'ervandew/supertab'
 Bundle 'mattn/emmet-vim'
 
+" Color scheme support in terminal
 Bundle 'godlygeek/csapprox'
 Bundle 'thinca/vim-guicolorscheme'
+
+" Completion for c, c++
+Bundle 'Rip-Rip/clang_complete'
 
 " Installing bundles for the first time
 if iCanHazVundle == 0
