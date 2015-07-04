@@ -108,6 +108,12 @@ Bundle 'thinca/vim-guicolorscheme'
 " Completion for c, c++
 Bundle 'Rip-Rip/clang_complete'
 
+" highlights the matching HTML tag when the cursor is positioned on a tag
+Bundle 'gregsexton/MatchTag'
+
+Bundle 'moll/vim-node'
+Bundle 'aklt/plantuml-syntax'
+
 " Installing bundles for the first time
 if iCanHazVundle == 0
     echo 'Installing Bundles, please ignore key map error messages'
