@@ -17,7 +17,7 @@ source $HOME/.vim/vimrc.neocomplcache
 source $HOME/.vim/vimrc.neosnippets
 source $HOME/.vim/vimrc.nerdtree
 source $HOME/.vim/vimrc.syntastic
-"source $HOME/.vim/vimrc.airline
+source $HOME/.vim/vimrc.airline
 source $HOME/.vim/vimrc.clang_complete
 
 source $HOME/.vim/vimrc.common

@@ -83,13 +83,6 @@ Bundle 'tpope/vim-repeat'
 " http://www.vim.org/scripts/script.php?script_id=3081
 Bundle 'lukaszb/vim-web-indent'
 
-" True Sublime Text style multiple selections for Vim
-Bundle 'terryma/vim-multiple-cursors'
-
-" Unite and create user interfaces
-Bundle 'Shougo/unite.vim'
-Bundle 'ujihisa/unite-colorscheme'
-
 " Completion
 Bundle 'Shougo/neocomplcache.vim'
 
@@ -111,7 +104,6 @@ Bundle 'Rip-Rip/clang_complete'
 " highlights the matching HTML tag when the cursor is positioned on a tag
 Bundle 'gregsexton/MatchTag'
 
-Bundle 'moll/vim-node'
 Bundle 'aklt/plantuml-syntax'
 
 " Installing bundles for the first time
@@ -120,6 +112,4 @@ if iCanHazVundle == 0
     echo ''
     :BundleInstall
 endif
-
-
 
