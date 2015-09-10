@@ -1,16 +1,11 @@
-"==================================================
-" Google Go syntax
-
 filetype off
 filetype plugin indent off
-set runtimepath+=/usr/local/go/misc/vim
+execute pathogen#infect()
+call pathogen#helptags()
 filetype plugin indent on
 syntax on
 
 source $HOME/.vim/vimrc.bundle
-
-"==================================================
-" Bundles settings
 
 source $HOME/.vim/vimrc.delimitmate
 source $HOME/.vim/vimrc.neocomplcache
