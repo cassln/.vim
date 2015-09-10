@@ -1,5 +1,11 @@
 # cassln's .vim directory
 
+## to do
+- [ ] try https://github.com/rstacruz/sparkup instead of emmet
+- [ ] list all curently hotkeys in readme.md
+- [ ] fix less linting
+- [ ] find goodies in https://robots.thoughtbot.com/tags/vim
+
 ## setup
 
 Clone repo to $HOME directory.
