@@ -1,10 +1,3 @@
-filetype off
-filetype plugin indent off
-execute pathogen#infect()
-call pathogen#helptags()
-filetype plugin indent on
-syntax on
-
 source $HOME/.vim/vimrc.bundle
 
 source $HOME/.vim/vimrc.delimitmate
