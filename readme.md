@@ -27,6 +27,8 @@ Update vimrc.
 ## hotkeys
 Note that `<leader>` is `\`.
 
-`<leader>f` -- open NERD Tree.
+|command|value|
+|:------------|:--------------|
+|`<leader>f` | Open NERD Tree.|
 
 
