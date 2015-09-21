@@ -5,6 +5,7 @@
 - [ ] list all curently hotkeys in readme.md
 - [ ] fix less linting
 - [ ] find goodies in https://robots.thoughtbot.com/tags/vim
+- [ ] try https://github.com/mileszs/ack.vim
 
 ## setup
 
