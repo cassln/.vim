@@ -67,3 +67,9 @@
 [submodule "bundle/tlib_vim"]
 	path = bundle/tlib_vim
 	url = https://github.com/tomtom/tlib_vim
+[submodule "bundle/vim-geeknote"]
+	path = bundle/vim-geeknote
+	url = https://github.com/neilagabriel/vim-geeknote
+[submodule "vim-json"]
+	path = vim-json
+	url = https://github.com/elzr/vim-json

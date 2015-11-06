@@ -229,10 +229,10 @@ if has("autocmd")
 
         " Set filetypes aliases
         au FileType htmldjango set ft=html.htmldjango
-        au FileType scss set ft=scss.css
-        au FileType less set ft=less.css
+        " au FileType scss set ft=scss.css
+        " au FileType less set ft=less.css
         au BufRead,BufNewFile *.js set ft=javascript.javascript-jquery
-        au BufRead,BufNewFile *.json set ft=json
+        au! BufRead,BufNewFile *.json set ft=json
         au BufRead,BufNewFile Jakefile set syntax=javascript
         au BufRead,BufNewFile *.jake set ft=javascript
         " Execute python \ -mjson.tool for autoformatting *.json
