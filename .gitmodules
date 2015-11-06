@@ -70,6 +70,6 @@
 [submodule "bundle/vim-geeknote"]
 	path = bundle/vim-geeknote
 	url = https://github.com/neilagabriel/vim-geeknote
-[submodule "vim-json"]
-	path = vim-json
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
 	url = https://github.com/elzr/vim-json
