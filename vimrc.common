@@ -43,17 +43,14 @@ vnoremap <silent> y y`]
 vnoremap <silent> p p`]
 nnoremap <silent> p p`]
 
-" Hit Enter to go to end of file
-nnoremap <CR> G
-
-" Hit Backspace to go to beginning of file
-nnoremap <BS> gg
-
 " Quickly select text you just pasted
 noremap gV `[v`]
 
 vmap < <gv
 vmap > >gv
+
+" Execute current file
+nnoremap <leader>r :!%:p<Enter>
 
 "==================================================
 " Display options
@@ -204,7 +201,6 @@ set noswapfile
 " Do not add eol at the end of file.
 set noeol
 
-
 "==================================================
 " Diff Options
 
@@ -272,3 +268,5 @@ function! s:Repl()
 endfunction
 vmap <silent> <expr> p <sid>Repl()
 
+" TODO move it later
+let g:vim_json_syntax_conceal=0
