@@ -198,7 +198,7 @@ if has("autocmd")
     augroup vimrc
     " Delete any previosly defined autocommands
     au!
-        " Auto reload vim after your cahange it
+        " Auto reload vim after your change it
         au BufWritePost *.vim source $MYVIMRC | AirlineRefresh
         au BufWritePost .vimrc source $MYVIMRC | AirlineRefresh
 
