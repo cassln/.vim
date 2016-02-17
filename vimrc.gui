@@ -1,15 +1,15 @@
 if has('gui_running')
-	" set guifont=DejaVu\ Sans\ Mono\ 10
-	" set guifont=Inconsolata\ LGC\ 11
-	" set guifont=Consolas\ 11
+	colorscheme candy
+
 	set guifont=Monospace\ 11
-	colo candy
-	:set guioptions-=m  "remove menu bar
-	:set guioptions-=T  "remove toolbar
-	:set guioptions-=r  "remove right-hand scroll bar
-	:set guioptions-=L  "remove left-hand scroll bar
-	:set guioptions+=e
-	autocmd GUIEnter * set vb t_vb=
+	set guioptions-=m	" menu bar
+	set guioptions-=T	" toolbar
+	set guioptions-=r	" right-hand scroll bar
+	set guioptions-=L	" left-hand scroll bar
+	set guioptions+=e	" gui tab pages
+
+	" no beep
+	autocmd GUIEnter * set visualbell t_vb=
 
 	nnoremap <C-S-tab> :tabprevious<CR>
 	nnoremap <C-tab>   :tabnext<CR>

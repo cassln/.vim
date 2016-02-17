@@ -15,6 +15,7 @@ source $HOME/.vim/vimrc.gui
 " vim-jade
 
 " Associate jade syntax with emblem
-au BufRead,BufNewFile *.emblem setfiletype jade
+autocmd BufRead,BufNewFile *.emblem setfiletype jade
+
 
 hi SpecialKey cterm=NONE

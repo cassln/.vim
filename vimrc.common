@@ -46,6 +46,7 @@ nnoremap <silent> p p`]
 " Quickly select text you just pasted
 noremap gV `[v`]
 
+" change indent of selected block without loss selection
 vmap < <gv
 vmap > >gv
 
@@ -55,10 +56,8 @@ nnoremap <leader>r :!%:p<Enter>
 "==================================================
 " Display options
 
-" colorscheme
-colo candy
+colorscheme candy
 
-" Hide showmode
 " Showmode is useless with airline
 set noshowmode
 
@@ -98,7 +97,7 @@ set number
 set cursorline
 
 " higlight column right after max textwidth
-set colorcolumn=80
+set colorcolumn=81
 
 " for colorscheme support
 set t_Co=256
@@ -135,7 +134,6 @@ set shiftround
 
 filetype plugin indent on
 
-
 "==================================================
 " Search options
 
@@ -163,26 +161,17 @@ set showmatch
 " Make < and > match as well
 set matchpairs+=<:>
 
-
-"==================================================
-" Wildmenu
-
-
 "==================================================
 " Folding
 
 " disable folding"
 set nofoldenable
 
-
 "==================================================
 " Edit
 
 " Allow backspace to remove indents, newlines and old text
 set backspace=indent,eol,start
-
-" toggle paste mode on \p
-" set pastetoggle=<leader>p
 
 " Add '-' as recognized word symbol. e.g dw delete all 'foo-bar' instead just 'foo'
 set iskeyword+=-
@@ -197,12 +186,6 @@ set nowritebackup
 
 " Disable swp files
 set noswapfile
-
-" Do not add eol at the end of file.
-set noeol
-
-"==================================================
-" Diff Options
 
 "==================================================
 " Aautocmd
@@ -254,8 +237,6 @@ if has("autocmd")
     augroup END
 
 endif
-
-nnoremap <leader>r :!%:p
 
 " vp doesn't replace paste buffer
 function! RestoreRegister()
