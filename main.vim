@@ -1,8 +1,8 @@
 source $HOME/.vim/bundle.vim
 
 source $HOME/.vim/delimitmate.vim
-source $HOME/.vim/neocomplcache.vim
-source $HOME/.vim/neosnippets.vim
+" source $HOME/.vim/neocomplcache.vim
+" source $HOME/.vim/neosnippets.vim
 source $HOME/.vim/nerdtree.vim
 source $HOME/.vim/syntastic.vim
 source $HOME/.vim/airline.vim
