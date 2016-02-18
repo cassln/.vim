@@ -12,7 +12,7 @@
 - [ ] find good snippets plugin. alternatives: SirVer/ultisnips, garbas/vim-snipmate, Shougo/neosnippet, drmingdrmer/xptemplate
 - [ ] find good completeion plugin
 - [ ] write why you use all this plugins
-- [ ] fix this: need `{ }` instead of this `{  }`, when pressing space
+- [ ] fix this: need `{_}` instead of this `{__}`, when pressing space
 - [ ] fix path completion in node
 
 ## setup
