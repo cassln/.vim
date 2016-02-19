@@ -206,6 +206,9 @@ if has("autocmd")
         au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
           \| exe "normal g'\"" | endif
 
+		" Set use curent editing file as current dir
+		" autocmd BufEnter * if &ft !~ '^nerdtree$' | silent! lcd %:p:h | endif
+
         " Set filetypes aliases
         au FileType htmldjango set ft=html.htmldjango
         " au FileType scss set ft=scss.css
@@ -240,12 +243,12 @@ endif
 
 " vp doesn't replace paste buffer
 function! RestoreRegister()
-  let @" = s:restore_reg
-  return ''
+	let @" = s:restore_reg
+	return ''
 endfunction
 function! s:Repl()
-  let s:restore_reg = @"
-  return "p@=RestoreRegister()\<cr>"
+	let s:restore_reg = @"
+	return "p@=RestoreRegister()\<cr>"
 endfunction
 vmap <silent> <expr> p <sid>Repl()
 

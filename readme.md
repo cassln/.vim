@@ -15,6 +15,28 @@
 - [ ] fix this: need { } instead of this {  }, when pressing space
 - [ ] fix path completion in node
 
+## plugins
+
+To install.
+```
+git submodule add <url> bundle/<name>
+```
+
+To uninstall.
+```
+git rm bundle/<name>
+```
+
+To disable.
+```
+git submodule deinit bundle/<name>
+```
+
+To enable.
+```
+git submodule init bundle/<name> && git submodule update
+```
+
 ## setup
 
 Clone repo to $HOME directory.
