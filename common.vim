@@ -25,6 +25,10 @@ endif
 " Enable syntax highlighting
 syntax on
 
+" autocomplete on :e
+set wildmenu
+set wildmode=list:longest
+
 "==================================================
 " Keymaps
 
