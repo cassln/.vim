@@ -1,28 +1,28 @@
 "-------------------------------------------------------------------------------
 " general options
 
-" Enable per-directory .vimrc files and disable unsafe commands in them
+" enable per-directory .vimrc files and disable unsafe commands in them
 set exrc secure
 
-" Auto reload changed files
+" auto reload changed files
 set autoread
 
-" Indicates fast terminal connection
+" indicates fast terminal connection
 set ttyfast
 
-" Set character encoding to use in vim
+" set character encoding to use in vim
 set encoding=utf-8
 
-" Let vim know what encoding we use in our terminal
+" let vim know what encoding we use in our terminal
 set termencoding=utf-8
 
-" Which EOl used. For us it's unix
-" Not works with modifiable=no
+" which EOl used. for us it's unix
+" not works with modifiable=no
 if &modifiable
     set fileformat=unix
 endif
 
-" Enable syntax highlighting
+" enable syntax highlighting
 syntax on
 
 " autocomplete on :e
@@ -73,42 +73,42 @@ vmap <silent> <expr> p <sid>Repl()
 
 colorscheme candy
 
-" Showmode is useless with airline
+" showmode is useless with airline
 set noshowmode
 
-" Show file name in window title
+" show file name in window title
 set title
 
-" Enable display whitespace characters
+" enable display whitespace characters
 set list
 
-" Setting up how to display whitespace characters
+" setting up how to display whitespace characters
 set listchars=tab:\ \ ,trail:·,extends:⋯,precedes:⋯,nbsp:~
 highlight SpecialKey cterm=NONE
 
-" Numbers of rows to keep to the left and to the right off the screen
+" numbers of rows to keep to the left and to the right off the screen
 set scrolloff=10
 
-" Numbers of columns to keep to the left and to the right off the screen
+" numbers of columns to keep to the left and to the right off the screen
 set sidescrolloff=10
 
-" Display command which you typing and other command related stuff
+" display command which you typing and other command related stuff
 set showcmd
 
-" Indicate that last window have a statusline too
+" indicate that last window have a statusline too
 set laststatus=2
 
-" The cursor should stay where you leave it, instead of moving to the first non
+" the cursor should stay where you leave it, instead of moving to the first non
 " blank of the line
 set nostartofline
 
-" Enable wrapping long string
+" enable wrapping long string
 set wrap
 
-" Display Line numbers
+" display line numbers
 set number
 
-" Highlight line with cursor
+" highlight line with cursor
 set cursorline
 
 " higlight column right after max textwidth
@@ -119,6 +119,8 @@ set t_Co=256
 
 " set highlighting for columns in colorcolumn
 highlight ColorColumn ctermbg=lightGrey
+
+hi SpecialKey cterm=NONE
 
 "-------------------------------------------------------------------------------
 " tab options
@@ -135,10 +137,10 @@ set smarttab
 " number of spaces to use for each step of indent
 set shiftwidth=4
 
-" Number of spaces that a Tab in the file counts for
+" number of spaces that a Tab in the file counts for
 set tabstop=4
 
-" Same but for editing operation (not shure what exactly does it means)
+" same but for editing operation (not shure what exactly does it means)
 " but in most cases tabstop and softtabstop better be the same
 set softtabstop=4
 
@@ -146,8 +148,6 @@ set softtabstop=4
 " Indentation always be multiple of shiftwidth
 " Applies to  < and > command
 set shiftround
-
-filetype plugin indent on
 
 "-------------------------------------------------------------------------------
 " search options
@@ -158,22 +158,22 @@ set gdefault
 " highlight search results
 set hlsearch
 
-" Ignore case in search patterns
+" ignore case in search patterns
 set ignorecase
 
-" Override the 'ignorecase' option if the search patter ncontains upper case characters
+" override the 'ignorecase' option if the search patter ncontains upper case characters
 set smartcase
 
-" Live search. While typing a search command, show where the pattern
+" live search. While typing a search command, show where the pattern
 set incsearch
 
-" Disable higlighting search result on Enter key
+" disable higlighting search result on Enter key
 nnoremap <silent> <cr> :nohlsearch<cr><cr>
 
-" Show matching brackets
+" show matching brackets
 set showmatch
 
-" Make < and > match as well
+" make < and > match as well
 set matchpairs+=<:>
 
 "-------------------------------------------------------------------------------
@@ -193,8 +193,8 @@ set iskeyword+=-
 " disable backups file
 set nobackup
 
-" Disable vim common sequense for saving.
-" By defalut vim write buffer to a new file, then delete original file
+" disable vim common sequense for saving.
+" by defalut vim write buffer to a new file, then delete original file
 " then rename the new file.
 set nowritebackup
 
@@ -226,6 +226,7 @@ if has("autocmd")
         au BufRead,BufNewFile Jakefile set syntax=javascript
         au BufRead,BufNewFile *.jake set ft=javascript
         au BufRead,BufNewFile *.md set ft=markdown
+		au BufRead,BufNewFile *.emblem setfiletype jade
 
         " auto close preview window, it uses with tags
         autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
@@ -238,5 +239,4 @@ if has("autocmd")
     augroup END
 
 endif
-
 

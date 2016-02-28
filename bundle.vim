@@ -6,7 +6,6 @@ filetype plugin indent off
 execute pathogen#infect()
 execute pathogen#helptags()
 filetype plugin indent on
-syntax on
 
 "-------------------------------------------------------------------------------
 " airline
@@ -39,9 +38,9 @@ let NERDTreeChDirMode=0
 nmap <silent> <leader>f :NERDTreeFind<CR>
 
 "-------------------------------------------------------------------------------
-" Syntastic
+" syntastic
 
-" Enable autochecks
+" enable autochecks
 " let g:syntastic_always_populate_loc_list = 1
 " let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open=1
@@ -57,8 +56,8 @@ nmap <silent> [ :lprev<cr>
 " next syntastic error
 nmap <silent> ] :lnext<cr>
 
-" Install jshint and csslint for syntastic
-" Path to jshint if it not installed globally, then use local installation
+" install jshint and csslint for syntastic
+" path to jshint if it not installed globally, then use local installation
 if !executable("jshint")
     let g:syntastic_javascript_jshint_exec = '~/.vim/node_modules/.bin/jshint'
     if !executable(expand(g:syntastic_javascript_jshint_exec))
@@ -66,7 +65,7 @@ if !executable("jshint")
     endif
 endif
 
-" Path to csslint if it not installed globally, then use local installation
+" path to csslint if it not installed globally, then use local installation
 if !executable("csslint")
     let g:syntastic_css_csslint_exec='~/.vim/node_modules/.bin/csslint'
     if !executable(expand(g:syntastic_css_csslint_exec))
