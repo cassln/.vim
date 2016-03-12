@@ -3,7 +3,7 @@
 ## to do
 - [ ] try https://github.com/rstacruz/sparkup instead of emmet
 - [ ] list all curently hotkeys in readme.md
-- [ ] fix less linting
+- [x] fix less linting
 - [ ] find goodies in https://robots.thoughtbot.com/tags/vim
 - [ ] try https://github.com/mileszs/ack.vim
 - [ ] russian language fix
@@ -11,32 +11,10 @@
 - [x] do i need easymotion?
 - [ ] find good snippets plugin. alternatives: SirVer/ultisnips, garbas/vim-snipmate, Shougo/neosnippet, drmingdrmer/xptemplate
 - [x] find good completeion plugin
-- [ ] write why you use all this plugins
+- [x] write why you use all this plugins
 - [x] fix this: need `{_}` instead of this `{__}`, when pressing space
 - [ ] fix path completion in node
 - [ ] camelCase move
-
-## plugins
-
-To install.
-```
-git submodule add <url> bundle/<name>
-```
-
-To uninstall.
-```
-git rm bundle/<name>
-```
-
-To disable.
-```
-git submodule deinit bundle/<name>
-```
-
-To enable.
-```
-git submodule init bundle/<name> && git submodule update
-```
 
 ## setup
 
@@ -50,8 +28,83 @@ Update submodules (plugins).
 	
 	$ cd .vim && git submodule init && git submodule update
 
+## operations
+
+install plugin
+```
+git submodule add <url> bundle/<name>
+```
+
+uninstall plugin
+```
+git rm bundle/<name>
+```
+
+temporary disable plugin
+```
+git submodule deinit bundle/<name>
+```
+
+enable disabled plugin
+```
+git submodule init bundle/<name> && git submodule update
+```
+
+## why use this plugins?
+
+### clang_complete
+completions for c and c++ languages
+
+### csapprox & vim-guicolorscheme
+colorschemes support in terminal
+
+### csapprox & vim-guicolorscheme
+don't know
+
+### delimitMate
+autocompletion for {(['""'])}
+
+### MatchTag
+don't know
+
+### nerdtree
+file system tree
+
+### pluntuml-syntax
+pluntuml syntax :)
+
+### syntastic
+linter
+
+### tcomment_vim
+comment hotkeys
+
+### vim-jade
+jade syntax
+
+### vim-javascript-syntax
+javascript syntax
+
+### vim-json
+json syntax
+
+### vim-less
+less syntax
+
+### vim-node
+node.js plugin
+
+### vim-repeat
+don't know
+
+### vim-surround
+???
+
+### vim-web-indent
+???
+
 ## hotkeys
-Note that `<leader>` is `\`.
+`<leader>` is `<Space>`
 
 |command|value|
 |:------------|:--------------|

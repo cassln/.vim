@@ -8,13 +8,6 @@ execute pathogen#helptags()
 filetype plugin indent on
 
 "-------------------------------------------------------------------------------
-" airline
-
-let g:airline_theme='bubblegum'
-let g:airline_left_sep = ' '
-let g:airline_right_sep = ' '
-
-"-------------------------------------------------------------------------------
 " clang_complete
 
 let g:clang_complete_auto = 0

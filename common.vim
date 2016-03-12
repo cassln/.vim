@@ -74,8 +74,8 @@ vmap <silent> <expr> p <sid>Repl()
 
 colorscheme candy
 
-" showmode is useless with airline
-set noshowmode
+" show mode
+set showmode
 
 " show file name in window title
 set title
