@@ -32,7 +32,8 @@ set wildmode=list:longest
 "-------------------------------------------------------------------------------
 " keymaps
 
-" let mapleader = "\<Space>"
+nnoremap <Space> <Nop>
+let mapleader = "\<Space>"
 
 " copy & paste to system clipboard with <Leader>p and <Leader>y:
 vmap <Leader>y "+y
@@ -179,7 +180,7 @@ set matchpairs+=<:>
 "-------------------------------------------------------------------------------
 " folding
 
-set nofoldenable
+" set nofoldenable
 
 "-------------------------------------------------------------------------------
 " edit
@@ -202,6 +203,11 @@ set nowritebackup
 set noswapfile
 
 "-------------------------------------------------------------------------------
+" statusline
+set statusline=%f%r%m%=%y\ %l:%L
+
+
+"-------------------------------------------------------------------------------
 " autocmd
 
 if has("autocmd")
@@ -210,8 +216,8 @@ if has("autocmd")
 
     au!
         " auto reload vim after your change it
-        au BufWritePost *.vim source $MYVIMRC | AirlineRefresh
-        au BufWritePost .vimrc source $MYVIMRC | AirlineRefresh
+        au BufWritePost *.vim source $MYVIMRC
+        au BufWritePost .vimrc source $MYVIMRC
 
         " restore cursor position :help last-position-jump
         au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")

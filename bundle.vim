@@ -27,7 +27,7 @@ let g:clang_complete_patterns = 1
 " delimitmate
 
 let delimitMate_expand_cr = 1
-let delimitMate_expand_space = 1
+let delimitMate_expand_space = 0
 let delimitMate_matchpairs = "(:),[:],{:}"
 
 "-------------------------------------------------------------------------------
@@ -52,9 +52,9 @@ let g:syntastic_cpp_compiler = 'clang++'
 " open quicfix window with all error found
 nmap <silent> <leader>ll :lopen<cr>
 " previous syntastic error
-nmap <silent> [ :lprev<cr>
+" nmap <silent> [ :lprev<cr>
 " next syntastic error
-nmap <silent> ] :lnext<cr>
+" nmap <silent> ] :lnext<cr>
 
 " install jshint and csslint for syntastic
 " path to jshint if it not installed globally, then use local installation

@@ -7,12 +7,12 @@
 - [ ] find goodies in https://robots.thoughtbot.com/tags/vim
 - [ ] try https://github.com/mileszs/ack.vim
 - [ ] russian language fix
-- [ ] leader as space?
+- [x] leader as space?
 - [x] do i need easymotion?
 - [ ] find good snippets plugin. alternatives: SirVer/ultisnips, garbas/vim-snipmate, Shougo/neosnippet, drmingdrmer/xptemplate
 - [x] find good completeion plugin
 - [ ] write why you use all this plugins
-- [ ] fix this: need `{_}` instead of this `{__}`, when pressing space
+- [x] fix this: need `{_}` instead of this `{__}`, when pressing space
 - [ ] fix path completion in node
 - [ ] camelCase move
 

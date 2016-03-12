@@ -13,9 +13,6 @@
 [submodule "bundle/tcomment_vim"]
 	path = bundle/tcomment_vim
 	url = https://github.com/tomtom/tcomment_vim
-[submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
-	url = https://github.com/bling/vim-airline
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate
