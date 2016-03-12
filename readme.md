@@ -18,36 +18,41 @@
 
 ## setup
 
-Clone repo to $HOME directory.
+clone repo to home directory
+```bash
+$ cd ~ && git clone git@github.com:cassln/.vim.git
+```
 
-	$ cd ~ && git clone git@github.com:cassln/.vim.git
-Link this in .vimrc.
-	
-	$ echo 'source $HOME/.vim/.vimrc' > .vimrc
-Update submodules (plugins).
-	
-	$ cd .vim && git submodule init && git submodule update
+link this in .vimrc
+```bash
+$ echo 'source $HOME/.vim/.vimrc' > .vimrc
+```
+
+update submodules (plugins)
+```bash	
+$ cd .vim && git submodule init && git submodule update
+```
 
 ## operations
 
 install plugin
-```
-git submodule add <url> bundle/<name>
+```bash
+$ git submodule add <url> bundle/<name>
 ```
 
 uninstall plugin
-```
-git rm bundle/<name>
+```bash
+$ git rm bundle/<name>
 ```
 
 temporary disable plugin
-```
-git submodule deinit bundle/<name>
+```bash
+$ git submodule deinit bundle/<name>
 ```
 
 enable disabled plugin
-```
-git submodule init bundle/<name> && git submodule update
+```bash
+$ git submodule init bundle/<name> && git submodule update
 ```
 
 ## why use this plugins?
@@ -58,14 +63,14 @@ completions for c and c++ languages
 ### csapprox & vim-guicolorscheme
 colorschemes support in terminal
 
-### csapprox & vim-guicolorscheme
-don't know
+### ctrlp
+???
 
 ### delimitMate
 autocompletion for {(['""'])}
 
 ### MatchTag
-don't know
+???
 
 ### nerdtree
 file system tree
@@ -95,7 +100,7 @@ less syntax
 node.js plugin
 
 ### vim-repeat
-don't know
+???
 
 ### vim-surround
 ???
