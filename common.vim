@@ -178,18 +178,10 @@ set showmatch
 set matchpairs+=<:>
 
 "-------------------------------------------------------------------------------
-" folding
-
-" set nofoldenable
-
-"-------------------------------------------------------------------------------
 " edit
 
 " allow backspace to remove indents, newlines and old text
 set backspace=indent,eol,start
-
-" add '-' as recognized word symbol. e.g dw delete all 'foo-bar' instead just 'foo'
-set iskeyword+=-
 
 " disable backups file
 set nobackup
@@ -205,7 +197,6 @@ set noswapfile
 "-------------------------------------------------------------------------------
 " statusline
 set statusline=%f%r%m%=%y\ %l:%L
-
 
 "-------------------------------------------------------------------------------
 " autocmd
@@ -233,6 +224,7 @@ if has("autocmd")
         au BufRead,BufNewFile *.jake set ft=javascript
         au BufRead,BufNewFile *.md set ft=markdown
 		au BufRead,BufNewFile *.emblem setfiletype jade
+        au FileType jade set ft=jade.pug
 
         " auto close preview window, it uses with tags
         autocmd CursorMovedI * if pumvisible() == 0|pclose|endif

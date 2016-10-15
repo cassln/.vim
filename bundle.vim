@@ -41,6 +41,8 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_enable_signs=1
 
 let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_jade_checkers = ['jade_lint']
 
 " open quicfix window with all error found
 nmap <silent> <leader>ll :lopen<cr>
@@ -55,6 +57,13 @@ if !executable("jshint")
     let g:syntastic_javascript_jshint_exec = '~/.vim/node_modules/.bin/jshint'
     if !executable(expand(g:syntastic_javascript_jshint_exec))
         silent ! echo 'Installing jshint' && npm --prefix ~/.vim/ install jshint
+    endif
+endif
+
+if !executable("eslint")
+    let g:syntastic_javascript_eslint_exec = '~/.vim/node_modules/.bin/eslint'
+    if !executable(expand(g:syntastic_javascript_eslint_exec))
+        silent ! echo 'Installing eslint' && npm --prefix ~/.vim/ install eslint
     endif
 endif
 
