@@ -1,13 +1,4 @@
 "-------------------------------------------------------------------------------
-" pathogen
-
-filetype off
-filetype plugin indent off
-execute pathogen#infect()
-execute pathogen#helptags()
-filetype plugin indent on
-
-"-------------------------------------------------------------------------------
 " clang_complete
 
 let g:clang_complete_auto = 0

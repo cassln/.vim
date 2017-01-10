@@ -33,7 +33,7 @@ update submodules (plugins)
 $ cd .vim && git submodule init && git submodule update
 ```
 
-## operations
+## operations (UPDATE THIS)
 
 install plugin
 ```bash
