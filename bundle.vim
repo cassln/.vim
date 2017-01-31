@@ -70,3 +70,14 @@ endif
 " json
 
 let g:vim_json_syntax_conceal=0
+
+"-------------------------------------------------------------------------------
+" ctrlp
+
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+
+if executable('ag')
+	let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+	let g:ctrlp_use_caching = 0
+endif
+

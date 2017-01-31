@@ -64,7 +64,7 @@ completions for c and c++ languages
 colorschemes support in terminal
 
 ### ctrlp
-???
+full path fuzzy finder
 
 ### delimitMate
 autocompletion for {(['""'])}
