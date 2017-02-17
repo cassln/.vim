@@ -1,23 +1,5 @@
 # cassln's .vim directory
-
-## to do
-- [ ] try https://github.com/rstacruz/sparkup instead of emmet
-- [ ] list all curently hotkeys in readme.md
-- [x] fix less linting
-- [ ] find goodies in https://robots.thoughtbot.com/tags/vim
-- [ ] try https://github.com/mileszs/ack.vim
-- [ ] russian language fix
-- [x] leader as space?
-- [x] do i need easymotion?
-- [ ] find good snippets plugin. alternatives: SirVer/ultisnips, garbas/vim-snipmate, Shougo/neosnippet, drmingdrmer/xptemplate
-- [x] find good completeion plugin
-- [x] write why you use all this plugins
-- [x] fix this: need `{_}` instead of this `{__}`, when pressing space
-- [ ] fix path completion in node
-- [ ] camelCase move
-
 ## setup
-
 clone repo to home directory
 ```bash
 $ cd ~ && git clone git@github.com:cassln/.vim.git
@@ -55,7 +37,6 @@ $ git submodule init pack/plugins/start/<name> && git submodule update
 ```
 
 ## why use this plugins?
-
 * [clang_complete](https://github.com/Rip-Rip/clang_complete) — completions for c and c++ languages.
 * [csapprox](https://github.com/godlygeek/csapprox) & vim-guicolorscheme — colorschemes support in terminal.
 * [ctrlp](https://github.com/kien/ctrlp.vim) — full path fuzzy finder.
@@ -81,5 +62,21 @@ $ git submodule init pack/plugins/start/<name> && git submodule update
 |command|value|
 |:------------|:--------------|
 |`<leader>f` | Open NERD Tree.|
+
+## to do
+- [ ] try https://github.com/rstacruz/sparkup instead of emmet
+- [ ] list all curently hotkeys in readme.md
+- [x] fix less linting
+- [ ] find goodies in https://robots.thoughtbot.com/tags/vim
+- [ ] try https://github.com/mileszs/ack.vim
+- [ ] russian language fix
+- [x] leader as space?
+- [x] do i need easymotion?
+- [ ] find good snippets plugin. alternatives: SirVer/ultisnips, garbas/vim-snipmate, Shougo/neosnippet, drmingdrmer/xptemplate
+- [x] find good completeion plugin
+- [x] write why you use all this plugins
+- [x] fix this: need `{_}` instead of this `{__}`, when pressing space
+- [ ] fix path completion in node
+- [ ] camelCase move
 
 
