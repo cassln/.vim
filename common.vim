@@ -177,6 +177,14 @@ set showmatch
 " make < and > match as well
 set matchpairs+=<:>
 
+" use ag as grep if exists
+if executable('ag')
+	set grepprg=ag\ --nogroup\ --nocolor
+endif
+
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
 "-------------------------------------------------------------------------------
 " edit
 
