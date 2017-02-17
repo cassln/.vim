@@ -37,22 +37,22 @@ $ cd .vim && git submodule init && git submodule update
 
 install plugin
 ```bash
-$ git submodule add <url> bundle/<name>
+$ git submodule add <url> pack/plugins/start/<name>
 ```
 
 uninstall plugin
 ```bash
-$ git rm bundle/<name>
+$ git rm pack/plugins/start/<name>
 ```
 
 temporary disable plugin
 ```bash
-$ git submodule deinit bundle/<name>
+$ git submodule deinit pack/plugins/start/<name>
 ```
 
 enable disabled plugin
 ```bash
-$ git submodule init bundle/<name> && git submodule update
+$ git submodule init pack/plugins/start/<name> && git submodule update
 ```
 
 ## why use this plugins?
@@ -107,6 +107,9 @@ node.js plugin
 
 ### vim-web-indent
 ???
+
+### [vim-sleuth](https://github.com/tpope/vim-sleuth)
+autodetect file indetation
 
 ## hotkeys
 `<leader>` is `<Space>`
