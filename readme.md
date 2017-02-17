@@ -57,59 +57,24 @@ $ git submodule init pack/plugins/start/<name> && git submodule update
 
 ## why use this plugins?
 
-### clang_complete
-completions for c and c++ languages
-
-### csapprox & vim-guicolorscheme
-colorschemes support in terminal
-
-### ctrlp
-full path fuzzy finder
-
-### delimitMate
-autocompletion for {(['""'])}
-
-### MatchTag
-???
-
-### nerdtree
-file system tree
-
-### pluntuml-syntax
-pluntuml syntax :)
-
-### syntastic
-linter
-
-### tcomment_vim
-comment hotkeys
-
-### vim-jade
-jade syntax
-
-### vim-javascript-syntax
-javascript syntax
-
-### vim-json
-json syntax
-
-### vim-less
-less syntax
-
-### vim-node
-node.js plugin
-
-### vim-repeat
-???
-
-### vim-surround
-???
-
-### vim-web-indent
-???
-
-### [vim-sleuth](https://github.com/tpope/vim-sleuth)
-autodetect file indetation
+* [clang_complete](https://github.com/Rip-Rip/clang_complete) — completions for c and c++ languages.
+* [csapprox](https://github.com/godlygeek/csapprox) & vim-guicolorscheme — colorschemes support in terminal.
+* [ctrlp](https://github.com/kien/ctrlp.vim) — full path fuzzy finder.
+* [delimitMate](https://github.com/Raimondi/delimitMate) — autocompletion for {(['""'])}.
+* [nerdtree](https://github.com/scrooloose/nerdtree) — file system tree.
+* [syntastic](https://github.com/vim-syntastic/syntastic) — linting.
+* [vim-node](https://github.com/moll/vim-node) — node.js plugin.
+* [tcomment_vim](https://github.com/tomtom/tcomment_vim) — comment hotkeys.
+* [pluntuml-syntax](https://github.com/aklt/plantuml-syntax) — pluntuml syntax.
+* [vim-jade](https://github.com/digitaltoad/vim-pug) — jade syntax.
+* [vim-javascript-syntax](https://github.com/jelera/vim-javascript-syntax) — javascript syntax.
+* [vim-json](https://github.com/elzr/vim-json) — json syntax.
+* [vim-less](https://github.com/groenewege/vim-less) — less syntax.
+* [vim-sleuth](https://github.com/tpope/vim-sleuth) — autodetect file indetation.
+* [MatchTag](https://github.com/gregsexton/MatchTag) ???
+* [vim-repeat](https://github.com/tpope/vim-repeat) ???
+* [vim-surround](https://github.com/tpope/vim-surround) ???
+* [vim-web-indent](https://github.com/lukaszb/vim-web-indent) ???
 
 ## hotkeys
 `<leader>` is `<Space>`
