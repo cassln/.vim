@@ -45,25 +45,25 @@ nmap <silent> <leader>ll :lopen<cr>
 " install jshint and csslint for syntastic
 " path to jshint if it not installed globally, then use local installation
 if !executable("jshint")
-    let g:syntastic_javascript_jshint_exec = '~/.vim/node_modules/.bin/jshint'
-    if !executable(expand(g:syntastic_javascript_jshint_exec))
-        silent ! echo 'Installing jshint' && npm --prefix ~/.vim/ install jshint
-    endif
+	let g:syntastic_javascript_jshint_exec = '~/.vim/node_modules/.bin/jshint'
+	if !executable(expand(g:syntastic_javascript_jshint_exec))
+		silent ! echo 'Installing jshint' && npm --prefix ~/.vim/ install jshint
+	endif
 endif
 
 if !executable("eslint")
-    let g:syntastic_javascript_eslint_exec = '~/.vim/node_modules/.bin/eslint'
-    if !executable(expand(g:syntastic_javascript_eslint_exec))
-        silent ! echo 'Installing eslint' && npm --prefix ~/.vim/ install eslint
-    endif
+	let g:syntastic_javascript_eslint_exec = '~/.vim/node_modules/.bin/eslint'
+	if !executable(expand(g:syntastic_javascript_eslint_exec))
+		silent ! echo 'Installing eslint' && npm --prefix ~/.vim/ install eslint
+	endif
 endif
 
 " path to csslint if it not installed globally, then use local installation
 if !executable("csslint")
-    let g:syntastic_css_csslint_exec='~/.vim/node_modules/.bin/csslint'
-    if !executable(expand(g:syntastic_css_csslint_exec))
-        silent ! echo 'Installing csslint' && npm --prefix ~/.vim/ install csslint
-    endif
+	let g:syntastic_css_csslint_exec='~/.vim/node_modules/.bin/csslint'
+	if !executable(expand(g:syntastic_css_csslint_exec))
+		silent ! echo 'Installing csslint' && npm --prefix ~/.vim/ install csslint
+	endif
 endif
 
 "-------------------------------------------------------------------------------

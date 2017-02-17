@@ -19,7 +19,7 @@ set termencoding=utf-8
 " which EOl used. for us it's unix
 " not works with modifiable=no
 if &modifiable
-    set fileformat=unix
+	set fileformat=unix
 endif
 
 " enable syntax highlighting
@@ -84,8 +84,7 @@ set title
 set list
 
 " setting up how to display whitespace characters
-set listchars=tab:\ \ ,trail:·,extends:⋯,precedes:⋯,nbsp:~
-highlight SpecialKey cterm=NONE
+set listchars=tab:>\ ,trail:·,extends:⋯,precedes:⋯,nbsp:~,space:·
 
 " numbers of rows to keep to the left and to the right off the screen
 set scrolloff=10
@@ -120,8 +119,7 @@ set t_Co=256
 
 " set highlighting for columns in colorcolumn
 highlight ColorColumn ctermbg=lightGrey
-
-hi SpecialKey cterm=NONE
+highlight SpecialKey term=NONE cterm=NONE gui=NONE
 
 "-------------------------------------------------------------------------------
 " tab options
@@ -211,38 +209,39 @@ set statusline=%f%r%m%=%y\ %l:%L
 
 if has("autocmd")
 
-    augroup vimrc
+	augroup vimrc
 
-    au!
-        " auto reload vim after your change it
-        au BufWritePost *.vim source $MYVIMRC
-        au BufWritePost .vimrc source $MYVIMRC
+	au!
+		" auto reload vim after your change it
+		au BufWritePost *.vim source $MYVIMRC
+		au BufWritePost .vimrc source $MYVIMRC
 
-        " restore cursor position :help last-position-jump
-        au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-          \| exe "normal g'\"" | endif
+		" restore cursor position :help last-position-jump
+		au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+		  \| exe "normal g'\"" | endif
 
 		" set use curent editing file as current dir
 		" autocmd BufEnter * if &ft !~ '^nerdtree$' | silent! lcd %:p:h | endif
 
-        " filetypes aliases
-        au BufRead,BufNewFile *.js set ft=javascript.javascript-jquery
-        au BufRead,BufNewFile *.json set ft=json
-        au BufRead,BufNewFile Jakefile set syntax=javascript
-        au BufRead,BufNewFile *.jake set ft=javascript
-        au BufRead,BufNewFile *.md set ft=markdown
+		" filetypes aliases
+		au BufRead,BufNewFile *.js set ft=javascript.javascript-jquery
+		au BufRead,BufNewFile *.json set ft=json
+		au BufRead,BufNewFile Jakefile set syntax=javascript
+		au BufRead,BufNewFile *.jake set ft=javascript
+		au BufRead,BufNewFile *.md set ft=markdown
 		au BufRead,BufNewFile *.emblem setfiletype jade
-        au FileType jade set ft=jade.pug
+		au FileType jade set ft=jade.pug
 
-        " auto close preview window, it uses with tags
-        autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-        autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+		" auto close preview window, it uses with tags
+		autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+		autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-        " disable vertical line at max string length in nerdtree
-        autocmd FileType * setlocal colorcolumn=81
-        autocmd FileType nerdtree setlocal colorcolumn=""
+		" disable vertical line at max string length in nerdtree
+		autocmd FileType * setlocal colorcolumn=81
+		autocmd FileType nerdtree setlocal colorcolumn=""
+		autocmd FileType nerdtree setlocal nolist
 
-    augroup END
+	augroup END
 
 endif
 

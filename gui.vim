@@ -1,5 +1,4 @@
 if has('gui_running')
-	colorscheme candy
 	highlight Cursor guifg=black guibg=lightgreen
 
 	set guifont=Monospace\ 11
