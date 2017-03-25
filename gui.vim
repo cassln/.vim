@@ -1,12 +1,7 @@
 if has('gui_running')
 	highlight Cursor guifg=black guibg=lightgreen
 
-	if IsWindows()
-		set guifont=Consolas:h11
-	else
-		set guifont=Monospace\ 11
-	endif
-
+	set guifont=Monospace\ 11
 	set guioptions-=m	" menu bar
 	set guioptions-=T	" toolbar
 	set guioptions-=r	" right-hand scroll bar

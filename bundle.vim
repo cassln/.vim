@@ -19,7 +19,6 @@ let delimitMate_matchpairs = "(:),[:],{:}"
 
 let NERDTreeShowHidden=1
 let NERDTreeChDirMode=0
-let NERDTreeDirArrows=1
 nmap <silent> <leader>f :NERDTreeFind<CR>
 
 "-------------------------------------------------------------------------------
