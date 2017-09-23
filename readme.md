@@ -47,7 +47,8 @@ $ git submodule init pack/plugins/start/<name> && git submodule update
 * [tcomment_vim](https://github.com/tomtom/tcomment_vim) — comment hotkeys.
 * [pluntuml-syntax](https://github.com/aklt/plantuml-syntax) — pluntuml syntax.
 * [vim-jade](https://github.com/digitaltoad/vim-pug) — jade syntax.
-* [vim-javascript-syntax](https://github.com/jelera/vim-javascript-syntax) — javascript syntax.
+* [vim-javascript](https://github.com/pangloss/vim-javascript) — javascript syntax.
+* [vim-jsx](https://github.com/mxw/vim-jsx) — jsx syntax.
 * [vim-json](https://github.com/elzr/vim-json) — json syntax.
 * [vim-less](https://github.com/groenewege/vim-less) — less syntax.
 * [vim-sleuth](https://github.com/tpope/vim-sleuth) — autodetect file indetation.
