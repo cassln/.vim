@@ -38,9 +38,10 @@ $ git submodule init pack/plugins/start/<name> && git submodule update
 
 ## why use this plugins?
 * [clang_complete](https://github.com/Rip-Rip/clang_complete) — completions for c and c++ languages.
-* [csapprox](https://github.com/godlygeek/csapprox) & vim-guicolorscheme — colorschemes support in terminal.
+* [csapprox](https://github.com/godlygeek/csapprox) &
+	[vim-guicolorscheme](https://github.com/thinca/vim-guicolorscheme) — colorschemes support in terminal.
 * [ctrlp](https://github.com/kien/ctrlp.vim) — full path fuzzy finder.
-* [delimitMate](https://github.com/Raimondi/delimitMate) — autocompletion for {(['""'])}.
+* [delimitMate](https://github.com/Raimondi/delimitMate) — autocompletion for quotes/parenthesizes.
 * [nerdtree](https://github.com/scrooloose/nerdtree) — file system tree.
 * [syntastic](https://github.com/vim-syntastic/syntastic) — linting.
 * [vim-node](https://github.com/moll/vim-node) — node.js plugin.
@@ -54,7 +55,7 @@ $ git submodule init pack/plugins/start/<name> && git submodule update
 * [vim-sleuth](https://github.com/tpope/vim-sleuth) — autodetect file indetation.
 * [MatchTag](https://github.com/gregsexton/MatchTag) ???
 * [vim-repeat](https://github.com/tpope/vim-repeat) ???
-* [vim-surround](https://github.com/tpope/vim-surround) ???
+* [vim-surround](https://github.com/tpope/vim-surround) easy quoting/parenthesizing
 * [vim-web-indent](https://github.com/lukaszb/vim-web-indent) ???
 
 ## hotkeys
