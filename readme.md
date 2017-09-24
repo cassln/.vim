@@ -54,8 +54,8 @@ $ git submodule init pack/plugins/start/<name> && git submodule update
 * [vim-less](https://github.com/groenewege/vim-less) — less syntax.
 * [vim-sleuth](https://github.com/tpope/vim-sleuth) — autodetect file indetation.
 * [MatchTag](https://github.com/gregsexton/MatchTag) ???
-* [vim-repeat](https://github.com/tpope/vim-repeat) ???
-* [vim-surround](https://github.com/tpope/vim-surround) easy quoting/parenthesizing
+* [vim-repeat](https://github.com/tpope/vim-repeat)  — enable repeating supported plugin maps with `.`.
+* [vim-surround](https://github.com/tpope/vim-surround) — easy quoting/parenthesizing.
 * [vim-web-indent](https://github.com/lukaszb/vim-web-indent) ???
 
 ## hotkeys
