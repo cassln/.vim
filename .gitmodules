@@ -34,9 +34,6 @@
 [submodule "bundle/clang_complete"]
 	path = pack/plugins/start/clang_complete
 	url = https://github.com/Rip-Rip/clang_complete
-[submodule "bundle/MatchTag"]
-	path = pack/plugins/start/MatchTag
-	url = https://github.com/gregsexton/MatchTag
 [submodule "bundle/plantuml-syntax"]
 	path = pack/plugins/start/plantuml-syntax
 	url = https://github.com/aklt/plantuml-syntax
