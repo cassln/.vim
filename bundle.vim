@@ -81,3 +81,8 @@ if executable('ag')
 	let g:ctrlp_use_caching = 0
 endif
 
+"-------------------------------------------------------------------------------
+" vim-markdown-preview
+
+let vim_markdown_preview_hotkey='<C-m>'
+let vim_markdown_preview_github=1

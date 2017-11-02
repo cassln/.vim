@@ -61,3 +61,6 @@
 [submodule "pack/plugins/start/vim-jsx"]
 	path = pack/plugins/start/vim-jsx
 	url = https://github.com/mxw/vim-jsx
+[submodule "pack/plugins/start/vim-markdown-preview"]
+	path = pack/plugins/start/vim-markdown-preview
+	url = https://github.com/JamshedVesuna/vim-markdown-preview
