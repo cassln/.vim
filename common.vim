@@ -105,8 +105,14 @@ set nostartofline
 " enable wrapping long string
 set wrap
 
-" display line numbers
-set number
+" display hybrid relative line numbers
+set number relativenumber
+
+augroup numbertoggle
+	autocmd!
+	autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+	autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
+augroup END
 
 " highlight line with cursor
 set cursorline
