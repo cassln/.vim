@@ -154,6 +154,10 @@ set softtabstop=4
 " Applies to  < and > command
 set shiftround
 
+" move to next/previous line with same indentation
+nnoremap <M-,> :call search('^'. matchstr(getline('.'), '\(^\s*\)') .'\%<' . line('.') . 'l\S', 'be')<CR>
+nnoremap <M-.> :call search('^'. matchstr(getline('.'), '\(^\s*\)') .'\%>' . line('.') . 'l\S', 'e')<CR>
+
 "-------------------------------------------------------------------------------
 " search options
 
