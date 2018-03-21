@@ -181,6 +181,10 @@ set showmatch
 " make < and > match as well
 set matchpairs+=<:>
 
+" enable extented matching
+packadd! matchit
+filetype plugin on
+
 " use ag as grep if exists
 if executable('ag')
 	set grepprg=ag\ --nogroup\ --nocolor
