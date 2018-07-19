@@ -43,6 +43,13 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 
+" copy filename to clipboard
+" (cn - filename, cp - full path, suffix n for line number)
+nmap <silent> <Leader>cn :let @+=expand("%")<CR>
+nmap <silent> <Leader>cp :let @+=expand("%:p")<CR>
+nmap <silent> <Leader>cnn :let @+=join([expand('%'),  line(".")], ':')<CR>
+nmap <silent> <Leader>cpn :let @+=join([expand('%:p'),  line(".")], ':')<CR>
+
 " automatically jump to end of text pasted
 vnoremap <silent> y y`]
 vnoremap <silent> p p`]
