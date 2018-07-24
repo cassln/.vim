@@ -262,6 +262,9 @@ if has("autocmd")
 		autocmd FileType nerdtree setlocal colorcolumn=""
 		autocmd FileType nerdtree setlocal nolist
 
+		" relative to current file path completion, but keep the working directory
+		autocmd InsertEnter * let save_cwd = getcwd() | set autochdir
+		autocmd InsertLeave * set noautochdir | execute 'cd' fnameescape(save_cwd)
 	augroup END
 
 endif
