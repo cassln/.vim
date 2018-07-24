@@ -77,7 +77,7 @@ $ git submodule init pack/plugins/start/<name> && git submodule update
 - [x] find good completeion plugin
 - [x] write why you use all this plugins
 - [x] fix this: need `{_}` instead of this `{__}`, when pressing space
-- [ ] fix path completion in node
+- [x] fix path completion in node
 - [ ] camelCase move
 
 
