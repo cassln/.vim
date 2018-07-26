@@ -29,6 +29,9 @@ if has('gui_running')
 	nnoremap <A-9> 9gt
 	nnoremap <A-0> 10gt
 
+	" fix browser opening
+	let g:netrw_browsex_viewer="setsid xdg-open"
+
 	" inoremap <C-S-w> <Esc>:tabclose<CR>
 	" nnoremap <C-S-w> :tabclose<CR>
 endif

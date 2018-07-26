@@ -64,3 +64,9 @@
 [submodule "pack/plugins/start/vim-markdown-preview"]
 	path = pack/plugins/start/vim-markdown-preview
 	url = https://github.com/JamshedVesuna/vim-markdown-preview
+[submodule "pack/plugins/start/vim-fugitive"]
+	path = pack/plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "pack/plugins/start/vim-rhubarb"]
+	path = pack/plugins/start/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb
