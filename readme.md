@@ -43,7 +43,7 @@ $ git submodule init pack/plugins/start/<name> && git submodule update
 * [ctrlp](https://github.com/kien/ctrlp.vim) — full path fuzzy finder.
 * [delimitMate](https://github.com/Raimondi/delimitMate) — autocompletion for quotes/parenthesizes.
 * [nerdtree](https://github.com/scrooloose/nerdtree) — file system tree.
-* [syntastic](https://github.com/vim-syntastic/syntastic) — linting.
+* [ale](https://github.com/w0rp/ale) — linting.
 * [vim-node](https://github.com/moll/vim-node) — node.js plugin.
 * [tcomment_vim](https://github.com/tomtom/tcomment_vim) — comment hotkeys.
 * [pluntuml-syntax](https://github.com/aklt/plantuml-syntax) — pluntuml syntax.

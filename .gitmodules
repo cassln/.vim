@@ -1,9 +1,6 @@
 [submodule "bundle/nerdtree"]
 	path = pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/syntastic"]
-	path = pack/plugins/start/syntastic
-	url = https://github.com/scrooloose/syntastic
 [submodule "bundle/ctrlp"]
 	path = pack/plugins/start/ctrlp
 	url = https://github.com/kien/ctrlp.vim
@@ -70,3 +67,6 @@
 [submodule "pack/plugins/start/vim-rhubarb"]
 	path = pack/plugins/start/vim-rhubarb
 	url = https://github.com/tpope/vim-rhubarb
+[submodule "pack/plugins/start/ale"]
+	path = pack/plugins/start/ale
+	url = https://github.com/w0rp/ale
