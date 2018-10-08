@@ -251,6 +251,7 @@ if has("autocmd")
 		au BufRead,BufNewFile *.jake set ft=javascript
 		au BufRead,BufNewFile *.md set ft=markdown
 		au BufRead,BufNewFile *.emblem setfiletype jade
+		au BufRead,BufNewFile *.pug setfiletype jade
 		au FileType jade set ft=jade.pug
 
 		" auto close preview window, it uses with tags
