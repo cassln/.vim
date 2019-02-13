@@ -56,6 +56,7 @@ $ git submodule init pack/plugins/start/<name> && git submodule update
 * [vim-repeat](https://github.com/tpope/vim-repeat)  — enable repeating supported plugin maps with `.`.
 * [vim-surround](https://github.com/tpope/vim-surround) — easy quoting/parenthesizing.
 * [vim-web-indent](https://github.com/lukaszb/vim-web-indent) ???
+* [typescript-vim](https://github.com/leafgarland/typescript-vim) — typescript syntax.
 
 ## hotkeys
 `<leader>` is `<Space>`
