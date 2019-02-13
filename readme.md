@@ -39,7 +39,7 @@ $ git submodule init pack/plugins/start/<name> && git submodule update
 ## why use this plugins?
 * [clang_complete](https://github.com/Rip-Rip/clang_complete) — completions for c and c++ languages.
 * [csapprox](https://github.com/godlygeek/csapprox) &
-	[vim-guicolorscheme](https://github.com/thinca/vim-guicolorscheme) — colorschemes support in terminal.
+* [vim-guicolorscheme](https://github.com/thinca/vim-guicolorscheme) — colorschemes support in terminal.
 * [ctrlp](https://github.com/kien/ctrlp.vim) — full path fuzzy finder.
 * [delimitMate](https://github.com/Raimondi/delimitMate) — autocompletion for quotes/parenthesizes.
 * [nerdtree](https://github.com/scrooloose/nerdtree) — file system tree.
