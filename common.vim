@@ -29,6 +29,9 @@ syntax on
 set wildmenu
 set wildmode=list:longest
 
+" no newline at the end of file
+set nofixendofline
+
 "-------------------------------------------------------------------------------
 " keymaps
 
