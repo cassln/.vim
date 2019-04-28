@@ -235,27 +235,27 @@ if has("autocmd")
 
 	augroup vimrc
 
-	au!
+	autocmd!
 		" auto reload vim after your change it
-		au BufWritePost *.vim source $MYVIMRC
-		au BufWritePost .vimrc source $MYVIMRC
+		autocmd BufWritePost *.vim source $MYVIMRC
+		autocmd BufWritePost .vimrc source $MYVIMRC
 
 		" restore cursor position :help last-position-jump
-		au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+		autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
 		  \| exe "normal g'\"" | endif
 
 		" set use curent editing file as current dir
 		" autocmd BufEnter * if &ft !~ '^nerdtree$' | silent! lcd %:p:h | endif
 
 		" filetypes aliases
-		au BufRead,BufNewFile *.js set ft=javascript.javascript-jquery
-		au BufRead,BufNewFile *.json set ft=json
-		au BufRead,BufNewFile Jakefile set syntax=javascript
-		au BufRead,BufNewFile *.jake set ft=javascript
-		au BufRead,BufNewFile *.md set ft=markdown
-		au BufRead,BufNewFile *.emblem setfiletype jade
-		au BufRead,BufNewFile *.pug setfiletype jade
-		au FileType jade set ft=jade.pug
+		autocmd BufRead,BufNewFile *.js set ft=javascript.javascript-jquery
+		autocmd BufRead,BufNewFile *.json set ft=json
+		autocmd BufRead,BufNewFile Jakefile set syntax=javascript
+		autocmd BufRead,BufNewFile *.jake set ft=javascript
+		autocmd BufRead,BufNewFile *.md set ft=markdown
+		autocmd BufRead,BufNewFile *.emblem setfiletype jade
+		autocmd BufRead,BufNewFile *.pug setfiletype jade
+		autocmd FileType jade set ft=jade.pug
 
 		" auto close preview window, it uses with tags
 		autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
