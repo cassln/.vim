@@ -1,39 +1,24 @@
-# cassln's .vim directory
-## setup
-clone repo to home directory
-```bash
-$ cd ~ && git clone git@github.com:cassln/.vim.git
-```
+# vim config
 
-link this in .vimrc
-```bash
-$ echo 'source $HOME/.vim/.vimrc' > .vimrc
-```
-
-update submodules (plugins)
-```bash	
-$ cd .vim && git submodule init && git submodule update
-```
-
-## operations
+## Plugins
 install plugin
 ```bash
-$ git submodule add <url> pack/plugins/start/<name>
+$ config submodule add <url> .vim/pack/plugins/start/<name>
 ```
 
 uninstall plugin
 ```bash
-$ git rm pack/plugins/start/<name>
+$ config rm .vim/pack/plugins/start/<name>
 ```
 
 temporary disable plugin
 ```bash
-$ git submodule deinit pack/plugins/start/<name>
+$ config submodule deinit .vim/pack/plugins/start/<name>
 ```
 
 enable disabled plugin
 ```bash
-$ git submodule init pack/plugins/start/<name> && git submodule update
+$ config submodule init .vim/pack/plugins/start/<name> && config submodule update
 ```
 
 ## why use this plugins?
@@ -80,5 +65,3 @@ $ git submodule init pack/plugins/start/<name> && git submodule update
 - [x] fix this: need `{_}` instead of this `{__}`, when pressing space
 - [x] fix path completion in node
 - [ ] camelCase move
-
-
