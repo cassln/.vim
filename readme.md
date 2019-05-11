@@ -5,6 +5,12 @@ All my "home" stuff in one repo. Original idea from [Hacker News thread](https:/
 ## Installation
 
 ```bash
+curl -o- https://raw.githubusercontent.com/cassln/config/master/cfg-install.sh | bash
+```
+
+Or manual:
+
+```bash
 git clone --bare git@github.com:cassln/config.git $HOME/.cfg
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 config checkout
