@@ -24,7 +24,7 @@ config config status.showUntrackedFiles no
 
 function prompt-config-property {
   local value
-  read -p "Enter git user $1 ($(config config user.$1)): " value
+  read -p "Enter git user $1 ($(config config user.$1)): " value </dev/tty
 
   if [[ ! -z "$value" ]]; then
     config config user.$1 $value
