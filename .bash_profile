@@ -4,7 +4,6 @@ export HISTCONTROL=ignoreboth
 export CLICOLOR=1
 
 export PATH=$PATH:$HOME/bin
-export PATH=$PATH:$(go env GOPATH)/bin
 
 alias ls="ls -F"
 alias pretty-json='python -m json.tool'
